@@ -21,7 +21,7 @@ export default function CumpleanosPage() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <LazyImage
-            src={`/sandy.JPG?height=300&width=300`}
+            src={`/brandy.JPG?height=300&width=300`}
             alt="Foto 1"
             width={300}
             height={400}
