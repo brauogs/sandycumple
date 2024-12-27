@@ -24,8 +24,7 @@ export default function CumpleanosPage() {
               alt="Foto 1"
               fill
               className="object-cover hover:scale-110 transition-transform duration-300"
-              sizes="(max-width: 768px) 100vw, 33vw"
-              priority
+              unoptimized 
             />
           </div>
           
@@ -46,8 +45,7 @@ export default function CumpleanosPage() {
               alt="Foto 2"
               fill
               className="object-cover hover:scale-110 transition-transform duration-300"
-              sizes="(max-width: 768px) 100vw, 33vw"
-              priority
+              unoptimized
             />
           </div>
         </div>
@@ -67,7 +65,7 @@ export default function CumpleanosPage() {
                   alt={`Collage foto ${index + 1}`}
                   fill
                   className="object-cover hover:scale-110 transition-transform duration-300"
-                  sizes="(max-width: 768px) 50vw, 25vw"
+                  unoptimized
                 />
               </div>
             )
