@@ -43,7 +43,7 @@ export default function CumpleanosPage() {
               </p>
               
               <p className="mt-4 text-pink-800 leading-relaxed">
-                También recuerdo las llamadas que hacemos, justo ahorita agregué este texto porque andamos jugando y risa y risaa los doos JAJAJ. Pero chi, el amor es muy bonito como tal cual dijo David Bowie en Under Pressure (escuchaaalaaa):
+                También recuerdo las llamadas que hacemos, justo ahorita agregué este texto porque andamos jugando y risa y risaa los doos JAJAJ. Pero chi, el amor es muy bonito como tal cual dijo David Bowie en Under Pressure (escuchaaalaaa):<br />
                 <em>
                   Cause loves such an old-fashioned word<br />
                   And love dares you to care for<br />
@@ -51,6 +51,11 @@ export default function CumpleanosPage() {
                   And love dares you to change our way of<br />
                   Caring about ourselves
                 </em>
+              </p>
+              <p className="mt-4 text-pink-800 leading-relaxed">
+              Extraño estar contigo, poder llamarte mi novia. Extraño la forma en que nos miramos con ternura, poder acudir el uno al otro cuando algo malo pasa y estar ahí para apoyarnos. Aprendo tanto de ti y valoro los recuerdos que hemos construido juntos durante todo este tiempo.
+              Amo tantas cosas de ti y de lo que compartimos. Amo nuestras risas, nuestras conversaciones interminables y cómo me haces sentir que el mundo es un lugar mejor cuando estás a mi lado. Amo compartir mi felicidad y soñar con un futuro contigo. 
+              Eres todo para mí, y haré todo lo posible para que siempre lo sientas así.
               </p>
             </div>
           </div>
