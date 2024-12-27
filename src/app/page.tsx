@@ -29,10 +29,10 @@ export default function CumpleanosPage() {
           <div className="col-span-1 md:col-span-1">
             <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-md p-6">
               <p className="text-pink-800 leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Este pedacito de página web es para ti amorcito, lo hice con todo el amor del mundo en un día tan especial como lo es tu cumpleaños. Espero que en este tiempo que nos conocemos, hayas sido muy feliz a mi lado, ya como amiko y después como novio, sabes que para mi, eres la mayor felicidad en este mundo. Aquí pongo pedacitos de mis fotos que más me gustan, ya que me gustan todas y es que la verdad es todo bien precioso, todo bien preciado.
               </p>
               <p className="mt-4 text-pink-800 leading-relaxed">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          En estos nuevos 22 años que vas a cumplir, espero que sean los mejores de tu vida, siendo yo quién te acompañe en diferentes etapas de ella, así como también en diferentes momentos, tristes, felices, existenciales, o nomas ahí, existenciales de nuevo. Siendo así, esta es en parte una carta digital, no sé cómo se pueda definir a este tipo de creación, pero quiero que sepas que eres una mujer muy bonita, muy preciosa, muy valiente, muy juerte, tambien muy que te vale (no autoriso 😡😡) y que tampoco te dejas cuidar a veces ehh, pero con esos achaques y cosas bien bonitas, eres lo mejor que ha pasado. Felices 22 años, corazón.💞
               </p>
             </div>
           </div>
