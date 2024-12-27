@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import { useIntersectionObserver } from './hooks/use-intersection-observer'
 
 export default function CumpleanosPage() {
   return (
@@ -18,7 +19,7 @@ export default function CumpleanosPage() {
         </h1>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <CustomImage
+          <LazyImage
             src="/placeholder.svg?height=400&width=300"
             alt="Foto 1"
             width={300}
@@ -36,7 +37,7 @@ export default function CumpleanosPage() {
             </div>
           </div>
           
-          <CustomImage
+          <LazyImage
             src="/placeholder.svg?height=400&width=300"
             alt="Foto 2"
             width={300}
@@ -45,9 +46,9 @@ export default function CumpleanosPage() {
         </div>
 
         {/* Sección de Collage */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
           {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
-            <CustomImage
+            <LazyImage
               key={index}
               src={`/placeholder.svg?height=300&width=300`}
               alt={`Collage foto ${index}`}
@@ -56,18 +57,6 @@ export default function CumpleanosPage() {
               className="group-hover:scale-110"
             />
           ))}
-        </div>
-
-        {/* Nueva sección de texto */}
-        <div className="max-w-3xl mx-auto mb-16">
-          <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-md p-6">
-            <p className="text-pink-800 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p className="mt-4 text-pink-800 leading-relaxed">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
         </div>
 
         {/* Sección de Video */}
@@ -94,19 +83,24 @@ export default function CumpleanosPage() {
   )
 }
 
-function CustomImage({ src, alt, width, height, className = '' }) {
+function LazyImage({ src, alt, width, height, className = '' }) {
+  const { elementRef, isVisible } = useIntersectionObserver()
+
   return (
     <div 
+      ref={elementRef}
       className={`relative group overflow-hidden rounded-lg transition-all duration-300 ease-in-out transform hover:z-10 shadow-lg ${className}`}
     >
       <div className="aspect-square md:aspect-auto">
-        <Image
-          src={src}
-          alt={alt}
-          width={width}
-          height={height}
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-        />
+        {isVisible && (
+          <Image
+            src={src}
+            alt={alt}
+            width={width}
+            height={height}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          />
+        )}
       </div>
     </div>
   )
