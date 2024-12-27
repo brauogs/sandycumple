@@ -24,7 +24,7 @@ export default function CumpleanosPage() {
               alt="Foto 1"
               fill
               className="object-cover hover:scale-110 transition-transform duration-300"
-              unoptimized 
+              unoptimized
             />
           </div>
           
@@ -77,9 +77,51 @@ export default function CumpleanosPage() {
           </div>
         </div>
 
-        <div className="mt-8 text-center">
-          <p className="text-2xl font-semibold text-pink-600">
-            Te amo con todo mi corazón
+        <div className="mt-16 space-y-12">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl font-semibold text-pink-600 mb-4">I Will - Mitski</h2>
+            <p className="text-pink-800 mb-6">
+              Esta es una canción muy bonita de Mitski, trata del amor que ella hubiera querido recibir, y para mí, es el amor tan bonito que te quiero dar, escucha la letra cuando puedas, te la doy subtitulada, no es tu estilo pero es muy bonita. Te amo, corazoncito.
+            </p>
+            <div className="relative pb-[56.25%] h-0">
+              <iframe
+                src="https://www.youtube.com/embed/2fEGhAWVyVA"
+                title="I Will - Mitski"
+                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+
+          <div className="max-w-3xl mx-auto">
+            <div className="relative pb-[56.25%] h-0">
+              <iframe
+                src="https://www.youtube.com/embed/zXfs-rjDqsA"
+                title="Second Song"
+                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+
+          <div className="max-w-3xl mx-auto">
+            <div className="relative pb-[56.25%] h-0">
+              <iframe
+                src="https://www.youtube.com/embed/sQ5jisI-Y8s"
+                title="Last Shadow Puppets"
+                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-16 text-center pb-8">
+          <p className="text-3xl font-bold text-pink-600">
+            Te adoro, corazón
           </p>
         </div>
       </main>
