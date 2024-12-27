@@ -34,7 +34,23 @@ export default function CumpleanosPage() {
                 Este pedacito de página web es para ti amorcito, lo hice con todo el amor del mundo en un día tan especial como lo es tu cumpleaños. Espero que en este tiempo que nos conocemos, hayas sido muy feliz a mi lado, ya como amiko y después como novio, sabes que para mi, eres la mayor felicidad en este mundo. Aquí pongo pedacitos de mis fotos que más me gustan, ya que me gustan todas y es que la verdad es todo bien precioso, todo bien preciado.
               </p>
               <p className="mt-4 text-pink-800 leading-relaxed">
-                En estos nuevos 22sss años que vas a cumplir, espero que sean los mejores de tu vida, siendo yo quién te acompañe en diferentes etapas de ella, así como también en diferentes momentos, tristes, felices, existenciales, o nomas ahí, existenciales de nuevo. Siendo así, esta es en parte una carta digital, no sé cómo se pueda definir a este tipo de creación, pero quiero que sepas que eres una mujer muy bonita, muy preciosa, muy valiente, muy juerte, tambien muy que te vale (no autoriso) y que tampoco te dejas cuidar a veces ehh, pero con esos achaques y cosas bien bonitas, eres lo mejor que ha pasado. Felices 22 años, corazón.
+                En estos nuevos 22 años que vas a cumplir, espero que sean los mejores de tu vida, siendo yo quién te acompañe en diferentes etapas de ella, así como también en diferentes momentos, tristes, felices, existenciales, o nomas ahí, existenciales de nuevo. Siendo así, esta es en parte una carta digital, no sé cómo se pueda definir a este tipo de creación, pero quiero que sepas que eres una mujer muy bonita, muy preciosa, muy valiente, muy juerte, tambien muy que te vale (no autoriso) y que tampoco te dejas cuidar a veces ehh, pero con esos achaques y cosas bien bonitas, eres lo mejor que ha pasado. Felices 22 años, corazón.
+              </p>
+
+              <p className="mt-4 text-pink-800 leading-relaxed">
+                No sabes cuanto te adoro, anhelo por hacerte feliz y cómo me encanta hacerlo :3 así que pues, no son tan muchas fotitos, pero son bonitas, hasta fondito pusheen le puse, es que se ve bien bonito.
+                Siempre recuerdo las cosas que hacemos juntos, las cosas tan lindas que me dices, tus ojitos tan bellos y preciosos que relusen cuando me ves, es que es innigualabe ese sentimiento, no sabes cuánto lo adoooro :3.
+              </p>
+              
+              <p className="mt-4 text-pink-800 leading-relaxed">
+                También recuerdo las llamadas que hacemos, justo ahorita agregué este texto porque andamos jugando y risa y risaa los doos JAJAJ. Pero chi, el amor es muy bonito como tal cual dijo David Bowie en Under Pressure (escuchaaalaaa):
+                <em>
+                  Cause loves such an old-fashioned word<br />
+                  And love dares you to care for<br />
+                  The people on the edge of the night<br />
+                  And love dares you to change our way of<br />
+                  Caring about ourselves
+                </em>
               </p>
             </div>
           </div>
