@@ -20,7 +20,7 @@ export default function CumpleanosPage() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <LazyImage
-            src="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Structuring_content/HTML_images/basic-image.png?height=400&width=300"
+            src="/brau.jpg?height=400&width=300"
             alt="Foto 1"
             width={300}
             height={400}
@@ -29,16 +29,16 @@ export default function CumpleanosPage() {
           <div className="col-span-1 md:col-span-1">
             <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-md p-6">
               <p className="text-pink-800 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <p className="mt-4 text-pink-800 leading-relaxed">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               </p>
             </div>
           </div>
           
           <LazyImage
-            src="../../public/sandy.jpg?height=400&width=300"
+            src="/sandy.jpg?height=400&width=300"
             alt="Foto 2"
             width={300}
             height={400}
