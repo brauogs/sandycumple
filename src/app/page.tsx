@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import { useIntersectionObserver } from './hooks/use-intersection-observer'
 
 export default function CumpleanosPage() {
   return (
@@ -19,7 +18,7 @@ export default function CumpleanosPage() {
         </h1>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <LazyImage
+          <CustomImage
             src="/placeholder.svg?height=400&width=300"
             alt="Foto 1"
             width={300}
@@ -37,7 +36,7 @@ export default function CumpleanosPage() {
             </div>
           </div>
           
-          <LazyImage
+          <CustomImage
             src="/placeholder.svg?height=400&width=300"
             alt="Foto 2"
             width={300}
@@ -48,7 +47,7 @@ export default function CumpleanosPage() {
         {/* Sección de Collage */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
           {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
-            <LazyImage
+            <CustomImage
               key={index}
               src={`/placeholder.svg?height=300&width=300`}
               alt={`Collage foto ${index}`}
@@ -95,24 +94,19 @@ export default function CumpleanosPage() {
   )
 }
 
-function LazyImage({ src, alt, width, height, className = '' }) {
-  const { elementRef, isVisible } = useIntersectionObserver()
-
+function CustomImage({ src, alt, width, height, className = '' }) {
   return (
     <div 
-      ref={elementRef}
       className={`relative group overflow-hidden rounded-lg transition-all duration-300 ease-in-out transform hover:z-10 shadow-lg ${className}`}
     >
       <div className="aspect-square md:aspect-auto">
-        {isVisible && (
-          <Image
-            src={src}
-            alt={alt}
-            width={width}
-            height={height}
-            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-          />
-        )}
+        <Image
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+        />
       </div>
     </div>
   )
