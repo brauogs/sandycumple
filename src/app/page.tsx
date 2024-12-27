@@ -72,7 +72,7 @@ export default function CumpleanosPage() {
           ))}
           <div className="col-span-2 bg-white/80 backdrop-blur-sm rounded-lg shadow-md p-6">
             <p className="text-pink-800 leading-relaxed">
-              Cada momento contigo es especial, cada sonrisa, cada mirada, cada instante que compartimos juntos se convierte en un recuerdo precioso que atesoraré por siempre. En este día tan especial, quiero que sepas lo mucho que significas para mí y lo feliz que me haces.
+              Aqui van pedazos de canciones que me gustaría dedicarte como un gran amor, me encantas, y van para ti amorcito, te adoro, corazón. No sabes como me gusta que seas mi novia y compartir cada momento contigo, es que es tan bonito tan ahh tan precioso, todas mis palabras van con toda la sincerdidad del mundo hacía tiii.
             </p>
           </div>
         </div>
