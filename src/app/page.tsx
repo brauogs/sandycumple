@@ -7,7 +7,7 @@ export default function CumpleanosPage() {
     <div 
       className="min-h-screen relative"
       style={{
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/pusheen-pc.jpeg')`,
+        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pusheen-pc-3lnzaz1hayik53th.jpg-KbkKYxqJXJpGRjIpft4LFpys0cIbIs.jpeg')`,
         backgroundSize: 'cover',
         backgroundAttachment: 'fixed'
       }}
@@ -37,13 +37,12 @@ export default function CumpleanosPage() {
           </div>
           
           <LazyImage
-          src="/sandy.JPG"
-          alt="Foto 2"
-          width={300}
-          height={400}
-        />
-      </div>
-
+            src="/sandy.JPG"
+            alt="Foto 2"
+            width={300}
+            height={400}
+          />
+        </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
         {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (

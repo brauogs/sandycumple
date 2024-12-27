@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
 
 interface LazyImageProps {
   src: string;
@@ -27,7 +27,6 @@ export function LazyImage({ src, alt, width, height, className = '' }: LazyImage
             width={width}
             height={height}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-            unoptimized
           />
         )}
       </div>
