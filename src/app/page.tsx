@@ -95,7 +95,16 @@ export default function CumpleanosPage() {
           </div>
 
           <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-semibold text-pink-600 mb-4">RX Queen - Deftones</h2>
+            <p className="text-pink-800 mb-6">
+              Demasiado lenta,d emasiado coital ajajja, pero esta chida, está bonita, esta para ti.
+            </p>
+
             <div className="relative pb-[56.25%] h-0">
+            <h2 className="text-2xl font-semibold text-pink-600 mb-4">I Will - Mitski</h2>
+            <p className="text-pink-800 mb-6">
+              Esta es una canción muy bonita de Mitski, trata del amor que ella hubiera querido recibir, y para mí, es el amor tan bonito que te quiero dar, escucha la letra cuando puedas, te la doy subtitulada, no es tu estilo pero es muy bonita. Te amo, corazoncito.
+            </p>
               <iframe
                 src="https://www.youtube.com/embed/zXfs-rjDqsA"
                 title="Second Song"
@@ -107,6 +116,10 @@ export default function CumpleanosPage() {
           </div>
 
           <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl font-semibold text-pink-600 mb-4">Miracle Aligner - The Last Shadow Puppets</h2>
+            <p className="text-pink-800 mb-6">
+            Y finalmente de Last Shadow Puppets (Es otro proyecto del alex turner, el de arctic monkeys), esta canción sí es muy para ti :3.
+            </p>
             <div className="relative pb-[56.25%] h-0">
               <iframe
                 src="https://www.youtube.com/embed/sQ5jisI-Y8s"
