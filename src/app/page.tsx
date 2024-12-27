@@ -1,6 +1,8 @@
 'use client';
 
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
+import brau from './brau.jpg'
+
 import { useIntersectionObserver } from '../../hooks/useIntersectionObserver';
 
 export default function CumpleanosPage() {
@@ -20,7 +22,7 @@ export default function CumpleanosPage() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <LazyImage
-            src={`/brau.JPG?height=300&width=300`}
+            src={brau}
             alt="Foto 1"
             width={300}
             height={400}
@@ -82,7 +84,7 @@ export default function CumpleanosPage() {
 }
 
 interface LazyImageProps {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
   width: number;
   height: number;
