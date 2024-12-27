@@ -38,7 +38,7 @@ export default function CumpleanosPage() {
           </div>
           
           <LazyImage
-            src={`/placeholder.svg?height=300&width=300`}
+            src={`/sandy.JPG?height=300&width=300`}
             alt="Foto 2"
             width={300}
             height={400}
