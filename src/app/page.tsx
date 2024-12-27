@@ -1,6 +1,7 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
+import Image from 'next/image';
+import { useIntersectionObserver } from '../../hooks/useIntersectionObserver';
 
 export default function CumpleanosPage() {
   return (
@@ -28,10 +29,10 @@ export default function CumpleanosPage() {
           <div className="col-span-1 md:col-span-1">
             <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-md p-6">
               <p className="text-pink-800 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <p className="mt-4 text-pink-800 leading-relaxed">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               </p>
             </div>
           </div>
@@ -44,7 +45,6 @@ export default function CumpleanosPage() {
           />
         </div>
 
-        {/* Sección de Collage */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
           {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
             <LazyImage
@@ -58,7 +58,6 @@ export default function CumpleanosPage() {
           ))}
         </div>
 
-        {/* Sección de Video */}
         <div className="max-w-3xl mx-auto mb-16">
           <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
             <video
@@ -79,7 +78,7 @@ export default function CumpleanosPage() {
         </div>
       </main>
     </div>
-  )
+  );
 }
 
 interface LazyImageProps {
@@ -91,7 +90,7 @@ interface LazyImageProps {
 }
 
 function LazyImage({ src, alt, width, height, className = '' }: LazyImageProps) {
-  const { elementRef, isVisible } = useIntersectionObserver()
+  const { elementRef, isVisible } = useIntersectionObserver();
 
   return (
     <div 
@@ -110,6 +109,5 @@ function LazyImage({ src, alt, width, height, className = '' }: LazyImageProps) 
         )}
       </div>
     </div>
-  )
+  );
 }
-
