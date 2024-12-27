@@ -1,8 +1,6 @@
 'use client';
 
-import Image, { StaticImageData } from 'next/image';
-
-import { useIntersectionObserver } from '../../hooks/useIntersectionObserver';
+import { LazyImage } from '../../components/LazyImage';
 
 export default function CumpleanosPage() {
   return (
@@ -20,12 +18,12 @@ export default function CumpleanosPage() {
         </h1>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <LazyImage
-            src={`/brandy.JPG?height=300&width=300`}
-            alt="Foto 1"
-            width={300}
-            height={400}
-          />
+        <LazyImage
+          src="/brandy.JPG"
+          alt="Foto 1"
+          width={300}
+          height={400}
+        />
           
           <div className="col-span-1 md:col-span-1">
             <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-md p-6">
@@ -39,7 +37,7 @@ export default function CumpleanosPage() {
           </div>
           
           <LazyImage
-            src={`/sandy.JPG?height=300&width=300`}
+            src="/sandy.JPG"
             alt="Foto 2"
             width={300}
             height={400}
@@ -47,17 +45,17 @@ export default function CumpleanosPage() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
-            <LazyImage
-              key={index}
-              src={`/placeholder.svg?height=300&width=300`}
-              alt={`Collage foto ${index}`}
-              width={300}
-              height={300}
-              className="group-hover:scale-110"
-            />
-          ))}
-        </div>
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
+          <LazyImage
+            key={index}
+            src={`/placeholder-${index}.jpg`}
+            alt={`Collage foto ${index}`}
+            width={300}
+            height={300}
+            className="group-hover:scale-110"
+          />
+        ))}
+      </div>
 
         <div className="max-w-3xl mx-auto mb-16">
           <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
@@ -78,37 +76,6 @@ export default function CumpleanosPage() {
           </p>
         </div>
       </main>
-    </div>
-  );
-}
-
-interface LazyImageProps {
-  src: string | StaticImageData;
-  alt: string;
-  width: number;
-  height: number;
-  className?: string;
-}
-
-function LazyImage({ src, alt, width, height, className = '' }: LazyImageProps) {
-  const { elementRef, isVisible } = useIntersectionObserver();
-
-  return (
-    <div 
-      ref={elementRef}
-      className={`relative group overflow-hidden rounded-lg transition-all duration-300 ease-in-out transform hover:z-10 shadow-lg ${className}`}
-    >
-      <div className="aspect-square md:aspect-auto">
-        {isVisible && (
-          <Image
-            src={src}
-            alt={alt}
-            width={width}
-            height={height}
-            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-          />
-        )}
-      </div>
     </div>
   );
 }
