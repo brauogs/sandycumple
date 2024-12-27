@@ -15,12 +15,12 @@ export default function CumpleanosPage() {
     >
       <main className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-center text-pink-600 mb-8">
-          sad
+          Mi amor, este pedacito de mi, es para ti, leelo con mucho cariño. Te adoro, corazón mío.
         </h1>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <LazyImage
-            src="/brau.JPG?height=400&width=300"
+            src={`/brau.JPG?height=300&width=300`}
             alt="Foto 1"
             width={300}
             height={400}
@@ -38,7 +38,7 @@ export default function CumpleanosPage() {
           </div>
           
           <LazyImage
-            src="/sandy.JPG?height=400&width=300"
+            src={`/sandy.JPG?height=300&width=300`}
             alt="Foto 2"
             width={300}
             height={400}
