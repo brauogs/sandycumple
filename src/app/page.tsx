@@ -58,7 +58,7 @@ export default function CumpleanosPage() {
                   Y el amor hace que te importes siempre<br />
                   Por las personas en el borde de la noche<br />
                   Y el amor te reta en cambiar la forma<br />
-                  En cambiar el amor por nosotros mismos<br />
+                  En cambiar el amor por nosotros mismos y hacía otros<br />
                   ¿Por qué no podemos dar amor, dar amor, dar amor, dar amor?<br />
                   ¿Dar amor, dar amor, dar amor, dar amor?
                 </em><br />
