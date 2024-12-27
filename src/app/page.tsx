@@ -49,8 +49,19 @@ export default function CumpleanosPage() {
                   And love dares you to care for<br />
                   The people on the edge of the night<br />
                   And love dares you to change our way of<br />
-                  Caring about ourselves
-                </em>
+                  Caring about ourselves<br />
+                  Why cant we give love, give love, give love, give love<br />
+                  Give love, give love, give love, give love?
+                </em><br />
+                <em>
+                  Porque el amor es una palabra tan anticuada y antigua<br />
+                  Y el amor hace que te importes siempre<br />
+                  Por las personas en el borde de la noche<br />
+                  Y el amor te reta en cambiar la forma<br />
+                  En cambiar el amor por nosotros mismos<br />
+                  ¿Por qué no podemos dar amor, dar amor, dar amor, dar amor?<br />
+                  ¿Dar amor, dar amor, dar amor, dar amor?
+                </em><br />
               </p>
               <p className="mt-4 text-pink-800 leading-relaxed">
               Extraño estar contigo, poder llamarte mi novia. Extraño la forma en que nos miramos con ternura, poder acudir el uno al otro cuando algo malo pasa y estar ahí para apoyarnos. Aprendo tanto de ti y valoro los recuerdos que hemos construido juntos durante todo este tiempo.
