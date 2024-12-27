@@ -1,7 +1,33 @@
 'use client'
 
 import Image from 'next/image'
-import { useIntersectionObserver } from './hooks/use-intersection-observer'
+import { useRef, useState, useEffect } from 'react';
+
+export function useIntersectionObserver() {
+  const elementRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => {
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current);
+      }
+    };
+  }, []);
+
+  return { elementRef, isVisible };
+}
 
 export default function CumpleanosPage() {
   return (
@@ -83,7 +109,15 @@ export default function CumpleanosPage() {
   )
 }
 
-function LazyImage({ src, alt, width, height, className = '' }) {
+interface LazyImageProps {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  className?: string;
+}
+
+function LazyImage({ src, alt, width, height, className = '' }: LazyImageProps) {
   const { elementRef, isVisible } = useIntersectionObserver()
 
   return (
